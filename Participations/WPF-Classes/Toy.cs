@@ -39,5 +39,10 @@ namespace WPF_Classes
             return output;
         }
 
+        public override string ToString()
+        {
+            return $"{Manufacturer} - {Name}";
+        }
+
     }
 }

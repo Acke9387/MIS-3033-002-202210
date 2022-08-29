@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lstToys" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="454,135,0,0"/>
+        <ListBox x:Name="lstToys" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="454,135,0,0" MouseDoubleClick="lstToys_MouseDoubleClick"/>
+        <Image x:Name="imgToyPicture" HorizontalAlignment="Left" Height="129" Margin="570,10,0,0" VerticalAlignment="Top" Width="170"/>
 
     </Grid>
 </Window>
