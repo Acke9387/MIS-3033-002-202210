@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="hpopt0e4.hhj~" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="contacts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace WPF_ContactList
 {
@@ -27,6 +27,10 @@ namespace WPF_ContactList
 
             string[] allLinesOfFile = File.ReadAllLines("contacts.txt");
 
+            for (int i = 0; i < allLinesOfFile.Length; i++)
+            {
+                lstContacts.Items.Add(allLinesOfFile[i]);
+            }
         }
     }
 }
