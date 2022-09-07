@@ -24,5 +24,12 @@ namespace WPF_VowelsAndConsonants
         {
             InitializeComponent();
         }
+
+        private void btnSplit_Click(object sender, RoutedEventArgs e)
+        {
+
+
+
+        }
     }
 }
