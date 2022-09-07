@@ -27,10 +27,58 @@ namespace WPF_ContactList
 
             string[] allLinesOfFile = File.ReadAllLines("contacts.txt");
 
-            for (int i = 0; i < allLinesOfFile.Length; i++)
+            for (int i = 1; i < allLinesOfFile.Length; i++)
             {
-                lstContacts.Items.Add(allLinesOfFile[i]);
+                string[] pieces = allLinesOfFile[i].Split("|");
+                //Id|FirstName|LastName|Email|Photo
+                Contact c = new Contact()
+                {
+                    Id = Convert.ToInt32(pieces[0]),
+                    FirstName = pieces[1],
+                    LastName = pieces[2],
+                    Email = pieces[3],
+                    Photo = pieces[4]
+                };
+
+                // Equivalent way as above
+                //c.Id = Convert.ToInt32(pieces[0]);
+                //c.FirstName = pieces[1];
+
+                lstContacts.Items.Add(c);
             }
+
+            // Can do something like this if you can't get all of the code working above
+            //Contact c = new Contact()
+            //{
+            //    Id = 1,
+            //    FirstName = "Joe",
+            //    LastName = "Smith",
+            //    Email = "Joe@smith.com",
+            //    Photo = ""
+            //};
+            //lstContacts.Items.Add(c);
+        }
+
+        private void btnDetails_Click(object sender, RoutedEventArgs e)
+        {
+            Contact selected = (Contact)lstContacts.SelectedItem;
+
+            if (selected is null)
+            {
+                return;
+            }
+
+            txtId.Text = selected.Id.ToString("N0");
+            txtFirstname.Text = selected.FirstName;
+            txtLastname.Text = selected.LastName;
+            txtEmail.Text = selected.Email;
+
+            imgPicture.Source = new BitmapImage(new Uri(selected.Photo));
+        }
+
+        private void lstContacts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            btnDetails.IsEnabled = true;
         }
     }
 }
