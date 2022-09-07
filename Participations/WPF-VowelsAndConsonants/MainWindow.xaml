@@ -14,7 +14,7 @@
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,128,0,0" HorizontalAlignment="Left" Width="400" Background="#BFFFFFFF"/>
         <Label Content="Vowels" HorizontalAlignment="Left" Margin="143,100,0,0" VerticalAlignment="Top" Background="#CC423EBD" Width="63" Foreground="#FFF5EFEF"/>
         <Label Content="Consonants" HorizontalAlignment="Left" Margin="568,100,0,0" VerticalAlignment="Top" Background="#CC423EBD" Width="85" Foreground="#FFF5EFEF"/>
-        <Rectangle Stroke="Black" Margin="211,10,200,339" Fill="#54FBF7F7"/>
+        <Rectangle Stroke="Black" Margin="200,10,190,0" Fill="#54FBF7F7" Height="85" VerticalAlignment="Top"/>
         <Label Content="Enter a word:" HorizontalAlignment="Left" Margin="230,39,0,0" VerticalAlignment="Top" Background="#CCDA3A16" Width="96" Foreground="#FFF5EFEF"/>
         <TextBox HorizontalAlignment="Left" Margin="355,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
         <Button x:Name="btnSplit" Content="Split" HorizontalAlignment="Left" Margin="507,34,0,0" VerticalAlignment="Top" Height="36" Width="75" IsDefault="True"/>
