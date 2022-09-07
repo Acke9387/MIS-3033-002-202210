@@ -27,8 +27,14 @@ namespace WPF_VowelsAndConsonants
 
         private void btnSplit_Click(object sender, RoutedEventArgs e)
         {
-
-
+            string word = txtInput.Text;
+            /* if they entered 'hello'
+            word[0] = 'h';
+            word[1] = 'e';
+            word[2] = 'l';
+            word[3] = 'l';
+            word[4] = 'o';
+            */
 
         }
     }
