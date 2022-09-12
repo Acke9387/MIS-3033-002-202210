@@ -27,7 +27,9 @@ namespace WPF_VowelsAndConsonants
 
         private void btnSplit_Click(object sender, RoutedEventArgs e)
         {
-            string word = txtInput.Text;
+            lstConsonants.Items.Clear();
+            lstVowels.Items.Clear();
+            string word = txtInput.Text.Replace(".","");
             /* if they entered 'hello'
             word[0] = 'h';
             word[1] = 'e';
@@ -35,6 +37,26 @@ namespace WPF_VowelsAndConsonants
             word[3] = 'l';
             word[4] = 'o';
             */
+
+            foreach (char letter in word)
+            {
+                if (char.IsLetter(letter) == false)
+                {
+                    continue;
+                }
+
+                if (char.ToLower(letter) == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+                {
+                    lstVowels.Items.Add(letter);
+                }
+                else
+                {
+                    lstConsonants.Items.Add(letter);
+                }
+
+            }
+
+            txtInput.Clear();
 
         }
     }
