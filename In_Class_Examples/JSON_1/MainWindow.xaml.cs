@@ -35,8 +35,21 @@ namespace JSON_1
 
             foreach (Person person in peeps)
             {
-                lstData.Items.Add(person); 
+                if (person.FirstName.ToLower()[0] == 'a')
+                {
+                    lstData.Items.Add(person);  
+                }
             }
+
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            string dataSerialized = JsonConvert.SerializeObject(lstData.Items, Formatting.Indented);
+
+            File.WriteAllText("contacts_starting_with_a.json", dataSerialized);
+
+            MessageBox.Show("Successfully saved!");
 
         }
     }

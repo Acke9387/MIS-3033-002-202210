@@ -9,6 +9,7 @@
     <Grid>
         <Button x:Name="btnProcess" Content="Button" HorizontalAlignment="Left" Margin="492,125,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstData" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,197,0,0"/>
+        <Button x:Name="btnSave" Content="Save Data" HorizontalAlignment="Left" Margin="148,125,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
 
     </Grid>
 </Window>
