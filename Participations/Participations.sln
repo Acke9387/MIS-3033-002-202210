@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-Classes", "WPF-Classes\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-ContactList", "WPF-ContactList\WPF-ContactList.csproj", "{AD4E6FC6-99B0-43B5-8B2E-DAF891DC4E41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-VowelsAndConsonants", "WPF-VowelsAndConsonants\WPF-VowelsAndConsonants.csproj", "{D627F8FC-63FB-4834-AA9D-10BC8BD14838}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-VowelsAndConsonants", "WPF-VowelsAndConsonants\WPF-VowelsAndConsonants.csproj", "{D627F8FC-63FB-4834-AA9D-10BC8BD14838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-FromAFile", "JSON-FromAFile\JSON-FromAFile.csproj", "{C6621D6E-4B1C-4A3C-9CA2-1C842FB6FF1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D627F8FC-63FB-4834-AA9D-10BC8BD14838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D627F8FC-63FB-4834-AA9D-10BC8BD14838}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D627F8FC-63FB-4834-AA9D-10BC8BD14838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6621D6E-4B1C-4A3C-9CA2-1C842FB6FF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6621D6E-4B1C-4A3C-9CA2-1C842FB6FF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6621D6E-4B1C-4A3C-9CA2-1C842FB6FF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6621D6E-4B1C-4A3C-9CA2-1C842FB6FF1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
