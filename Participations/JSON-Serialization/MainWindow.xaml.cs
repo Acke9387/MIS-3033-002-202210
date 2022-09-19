@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,15 @@ namespace JSON_Serialization
         public MainWindow()
         {
             InitializeComponent();
+
+            var allContentExceptHeader = File.ReadAllLines("all_games.csv").Skip(1);
+
+            foreach (var line in allContentExceptHeader)
+            {
+                var pieces = line.Split(',');
+
+                //pieces[0] 
+            }
         }
     }
 }

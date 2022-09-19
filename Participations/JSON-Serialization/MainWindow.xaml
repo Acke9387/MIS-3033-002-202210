@@ -11,9 +11,13 @@
     </Window.Background>
     <Grid>
         <GroupBox Header="Select a platform" Margin="493,10,43,335" Foreground="Black" FontWeight="Bold" BorderBrush="#FF844C25" Background="#E5E64C4C" FontSize="14">
-            <ComboBox x:Name="cboPlatforms" HorizontalAlignment="Left" Margin="25,0,0,0" Width="198" Height="28" SelectionChanged="cboColors_SelectionChanged"/>
+            <ComboBox x:Name="cboPlatforms" HorizontalAlignment="Left" Margin="25,0,0,0" Width="198" Height="28"/>
         </GroupBox>
         <ListBox x:Name="lstGames" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,197,0,0" Background="#BFFFFFFF"/>
-        <Button x:Name="btnSave" Content="Save Data" HorizontalAlignment="Left" Margin="169,130,0,0" VerticalAlignment="Top" Height="62" Width="128" Background="#FFBF2C2C" Foreground="#FFFBF7F7" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnSave" Content="Save Data" HorizontalAlignment="Left" Margin="127,85,0,0" VerticalAlignment="Top" Height="107" Width="170" Foreground="#FFD21F1F" FontWeight="Bold" FontSize="14">
+            <Button.Background>
+                <ImageBrush ImageSource="https://mpng.subpng.com/20190820/wqx/transparent-floppy-disk-line-rectangle-clip-art-5d6726fb366e78.987590621567041275223.jpg"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
