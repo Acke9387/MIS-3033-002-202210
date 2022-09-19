@@ -29,8 +29,8 @@ namespace JSON_Serialization
 
             foreach (var line in allContentExceptHeader)
             {
+                //line = "name,platform,release_date,summary,meta_score,user_review"
                 var pieces = line.Split(',');
-
                 //pieces[0] 
             }
         }
