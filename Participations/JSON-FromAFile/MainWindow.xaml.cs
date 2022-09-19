@@ -65,6 +65,16 @@ namespace JSON_FromAFile
                 }
             }
 
+            // **** New window example code
+
+            //if (lstCars.Items.Count != 0)
+            //{
+            //    Details deets = new Details();
+            //    deets.details = (Car)lstCars.Items[0];
+            //    deets.PopulateData();
+            //    deets.ShowDialog(); 
+            //}
+
             lblResults.Content = $"{lstCars.Items.Count.ToString("N0")} results found.";
         }
     }
