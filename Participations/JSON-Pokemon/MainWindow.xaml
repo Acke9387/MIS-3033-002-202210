@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JSON_Pokemon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Pokemon" Height="450" Width="800">
     <Window.Background>
         <ImageBrush ImageSource="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswFhxjoxLEcEZRtgyC7wWD0pIEZnVYt_FYw&amp;usqp=CAU"/>
     </Window.Background>
