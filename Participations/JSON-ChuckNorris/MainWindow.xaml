@@ -13,7 +13,7 @@
         <GroupBox Header="Select a Category" Margin="39,61,529,296" Background="#3FFFFFFF" Foreground="#FFEA1111">
             <ComboBox x:Name="cboCategories" HorizontalAlignment="Left" Margin="10,0,0,0" Width="198"/>
         </GroupBox>
-        <TextBox x:Name="txtJoke" HorizontalAlignment="Left" Margin="155,162,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="520" Height="215" Background="#A52A97C5" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="txtJoke" HorizontalAlignment="Left" Margin="155,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="520" Height="215" Background="#A52A97C5" Foreground="White" FontSize="16"/>
 
     </Grid>
 </Window>
