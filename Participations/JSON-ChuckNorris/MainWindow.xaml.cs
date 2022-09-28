@@ -27,6 +27,7 @@ namespace JSON_ChuckNorris
             InitializeComponent();
 
             cboCategories.Items.Add("all");
+            cboCategories.SelectedIndex = 0;
 
             using (var client = new HttpClient())
             {
