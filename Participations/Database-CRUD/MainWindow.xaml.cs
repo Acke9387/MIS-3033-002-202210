@@ -26,27 +26,36 @@ namespace Database_CRUD
     {
 
         SoonerCoContext db = new SoonerCoContext();
-        private bool ShouldLoadToys = false;
-        private bool ShouldLoadOwners = false;
-        private bool ShouldLoadDogs = true;
+        
 
         public MainWindow()
         {
             InitializeComponent();
-
-
-
         }
 
         private void btnGo_Click(object sender, RoutedEventArgs e)
         {
 
-            //LoadToys(ShouldLoadToys);
+            //LoadToys();
             //LoadOwners(ShouldLoadOwners);
             //LoadDogs(ShouldLoadDogs);
 
 
             DisplayDatabaseContent();
+        }
+
+        private void LoadToys()
+        {
+            var toyData = File.ReadAllText("Toys.json");
+            var toys = JsonConvert.DeserializeObject<List<ToyInput>>(toyData);
+
+            foreach (var toy in toys)
+            {
+                db.Toys.Add(new Toy(toy));
+            }
+
+            db.SaveChanges();
+
         }
 
         private void DisplayDatabaseContent()
