@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSON_1", "JSON_1\JSON_1.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSON_From_Web", "JSON_From_Web\JSON_From_Web.csproj", "{ECABD237-02D6-4BA7-93CA-FD213ADEF8EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database_Example", "Database_Example\Database_Example.csproj", "{BC8A9E4C-8EE6-4674-AF3A-08F944FE6F07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database_Example", "Database_Example\Database_Example.csproj", "{BC8A9E4C-8EE6-4674-AF3A-08F944FE6F07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstMVCApplication", "MyFirstMVCApplication\MyFirstMVCApplication.csproj", "{152B3DD6-EDEE-47DD-B9D8-367F75661FFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BC8A9E4C-8EE6-4674-AF3A-08F944FE6F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC8A9E4C-8EE6-4674-AF3A-08F944FE6F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC8A9E4C-8EE6-4674-AF3A-08F944FE6F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{152B3DD6-EDEE-47DD-B9D8-367F75661FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{152B3DD6-EDEE-47DD-B9D8-367F75661FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{152B3DD6-EDEE-47DD-B9D8-367F75661FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{152B3DD6-EDEE-47DD-B9D8-367F75661FFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
